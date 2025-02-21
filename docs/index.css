@@ -1,0 +1,72 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.abas-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.aba {
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    width: 200px; /* Largura fixa para cada aba */
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aba img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.aba p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.aba:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais forte */
+}
+@media (max-width: 768px) {
+    .aba {
+        width: 45%; /* Duas abas por linha em telas menores */
+    }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.aba {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.center{
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.centro{
+    text-align: center;
+    color: white;
+}
